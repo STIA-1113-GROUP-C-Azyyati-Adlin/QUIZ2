@@ -1,0 +1,92 @@
+package Q1;
+
+import java.util.Scanner;
+
+public class QUESTION1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Scanner sc = new Scanner (System.in);
+		
+		double salary;
+		double yearofservice;
+		double netBonus;
+		double monthlySalary;
+		int age;
+		
+		System.out.println("Enter your salary : ");
+		salary = sc.nextDouble();
+		
+		System.out.println("Enter your year of service :");
+		yearofservice = sc.nextDouble();
+		
+		netBonus = 0.05 * salary;
+		
+		if (yearofservice >5) {
+		System.out.println("Net Bonus Amount is " +netBonus);
+		}
+		else {
+			System.out.println("No bonus for you!");
+		}
+		
+		System.out.println();
+		
+		do {
+		System.out.println("Enter your monthly salary : ");
+		monthlySalary = sc.nextInt();
+		
+		if (monthlySalary <= 1000) {
+			System.out.println("Your salary are the lowest");
+		}
+		
+		else if (monthlySalary <= 3000) {
+			System.out.println("Your salary are the lowest");
+		}
+		
+		System.out.println();
+		
+		System.out.println("Enter your age : ");
+		age = sc.nextInt();
+		
+		if (age < 50) {
+			System.out.println("You are youngest");
+		}
+		
+		else if (age > 50) {
+			System.out.println("You are oldest");
+		}
+		}while (age != 0);
+		
+	}
+
+}
+
+Output :
+
+Enter your salary : 
+1500
+Enter your year of service :
+6
+Net Bonus Amount is 75.0
+
+Enter your monthly salary : 
+1000
+Your salary are the lowest
+
+Enter your age : 
+50
+Enter your monthly salary : 
+1500
+Your salary are the lowest
+
+Enter your age : 
+60
+You are oldest
+Enter your monthly salary : 
+2500
+Your salary are the lowest
+
+Enter your age : 
+0
+You are youngest
